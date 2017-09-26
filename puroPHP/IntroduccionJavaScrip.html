@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio de introduccion a JavaScrip</title>
+	<style type="text/css">
+		
+		div{
+			border: 1px solid black;
+			width:500px;
+			height: 300px; 
+		}
+	</style>
+</head> 
+<body>
+
+  <div onclick="alert('hola william estamos en onclick');">click normal </div>
+
+  <div oncontextmenu="alert('hola william estamos oncontextmenu');">click right para desplegar </div>
+
+  <div ondblclick="alert('hola william estamos en ondblclick');">hola william estamos en ondblclick</div>
+
+  <div onmouseout="alert('hola william estamos en onmouseout');">hola william estamos en onmouseout</div>
+
+   <div onmouseover="alert('hola william estamos en onmouseout')"; onmouseout="alert('hola william estamos en onmouseout');">hola william estamos en la combinancion de onmouseout y onmouseover</div>
+
+   <div onmouseover="mi_function_1()"; onmouseout="mifuncion2()">hola william estamos en la combinancion de onmouseout y onmouseover pero CON FUNCIONES </div>
+
+   <div onmouseover="mi_function_1()"; onmouseout="mifuncion2()">hola william estamos en la cambio del borde de color con javascrip </div>
+
+  
+
+
+
+    <script>
+	     function mi_function_1(){
+	     	alert('hola william estamos en onmouseover');
+	     }
+
+	     function mifuncion2(){
+	     	alert('hola william estamos en onmouseout');
+	     }
+    </script>
+
+</body>
+</html>

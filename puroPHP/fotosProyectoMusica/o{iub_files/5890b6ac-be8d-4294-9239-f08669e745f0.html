@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<!-- saved from url=(0208)http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/featured -->
+<html ng-app="marketEditorApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>marketEditor</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="noindex, nofollow">
+  
+<script type="text/javascript" src="c99d7f1ab0(2)"></script><script src="nr-632.min.js"></script><script type="text/javascript" async="" src="conversion_async.js"></script><script type="text/javascript" async="" src="analytics.js"></script><script type="text/javascript" async="" src="_Incapsula_Resource"></script><script type="text/javascript" async="" src="mixpanel-2-latest.min.js"></script><script async="" src="gtm.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgUDU15ACwUFUFFUBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+
+  <link rel="stylesheet" href="http://static.wix.com/services/third-party/fonts/Helvetica/fontFace.css">
+
+  <!--  -->
+<link rel="stylesheet" href="http://static.parastorage.com/services/market-editor/1.159.0/styles/vendor.css">
+<!--  -->
+
+  <link rel="stylesheet" href="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/wix-thumbnail-carousel/dist/wix-thumbnail-carousel.css">
+  <link rel="stylesheet" href="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/wix-cycle-carousel/dist/wix-cycle-carousel.css">
+  <link rel="stylesheet" href="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/wix-loading-indicator/dist/wix-loading-indicator.css">
+  <link rel="stylesheet" href="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/slick-carousel/slick/slick.css">
+
+  <!--  -->
+<link rel="stylesheet" href="http://static.parastorage.com/services/market-editor/1.159.0/styles/main.css">
+<!--  -->
+
+  <!--  -->
+</head>
+<body experiment-classes="" marginwidth="0" marginheight="0" style="" class="specs-FrontPageCarouselEditor specs-NewAppBoxesDesign specs-FuzzySearchSpec specs-PermissionRequestEditor specs-SyncSlugsFromOldApi specs-NewApiEditor specs-WixReviewsEditor specs-NewCategoriesDesign specs-NewAppModal specs-WishList specs-LocalizedPriceEditor specs-PendingAppsEditor specs-NewAppHoverButton specs-BestByWixEditor specs-NewSearchResultsDesign">
+
+<script>
+  //FIXME: Opera loops indefinitely
+  if (navigator.userAgent.match(/Opera\/9.80/i)) {
+    document.write('Due to technical difficulties, Opera 12.x and below is not supported at this time :(');
+    window.stop();
+  }
+</script>
+
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-MDD5C4"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDD5C4');</script>
+<!-- End Google Tag Manager -->
+
+<!-- ngIf: !appMarketLoaded -->
+<!-- uiView: layout --><div class="wix-market-editor ng-scope" ui-view="layout"><div class="layout ng-scope">
+    <!-- uiView: sidebar --><div class="sidebar new-categories-design ng-scope" ui-view="sidebar"><!-- ngInclude: undefined --><ng-include src="&#39;views/includes/sidebar-new-categories-design.html&#39;" class="ng-scope"><div class="navigation new-categories-design pull-left ng-scope" scroll-fixed="" limit-to="#wix-footer" limit-offset="287" ng-class="{&#39;with-pending&#39;: pendingAppsManager.pendingApps.length, &#39;with-developer&#39;: hasDeveloperApplications(), &#39;with-best2014&#39;: experiment.isEnabled(&#39;specs.BestApps2014Editor&#39;)}">
+    <form id="search_app" role="form" ng-submit="search(query)" class="search ng-pristine ng-valid">
+        <input type="text" placeholder="Search apps" ng-model="query" focus="!query" autofocus="" class="ng-pristine ng-valid">
+        <input type="submit" value="">
+    </form>
+
+    <nav class="primary">
+        <!-- ngIf: pendingAppsManager.pendingApps.length -->
+
+        <!-- ngIf: pendingAppsManager.pendingApps.length -->
+
+        <!-- ngIf: hasDeveloperApplications() -->
+
+        <!-- ngIf: hasDeveloperApplications() -->
+
+        <ul class="menu-top">
+            <li ui-sref-active="selected" selected-menu-item="" class="ng-isolate-scope selected">
+                <a clean-href="" ui-sref="page.featured" class="ng-binding" href="5890b6ac-be8d-4294-9239-f08669e745f0.html">Featured</a>
+            </li>
+            <li ui-sref-active="selected" selected-menu-item="" class="ng-isolate-scope">
+                <a ui-sref="page.new" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/new">New!</a>
+            </li>
+            <li ui-sref-active="selected" selected-menu-item="" class="ng-isolate-scope">
+                <a ui-sref="page.popular" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/popular">Most Popular</a>
+            </li>
+            <!-- ngIf: experiment.isEnabled('specs.BestApps2014Editor') -->
+        </ul>
+
+        <div class="hr">
+            <hr>
+        </div>
+
+        <ul class="secondary ps-container" wix-scroll-pane="">
+            <li ui-sref-active="selected" selected-menu-item="" class="ng-isolate-scope">
+                <a ui-sref="page.all" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/all">All Apps</a>
+            </li>
+            <!-- ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/free-2">Free</a>
+            </li><!-- end ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/made-by-wix-1">Made by Wix</a>
+            </li><!-- end ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/social">Social</a>
+            </li><!-- end ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/forms">Forms</a>
+            </li><!-- end ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/galleries-2">Galleries</a>
+            </li><!-- end ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/ecommerce">eCommerce</a>
+            </li><!-- end ngRepeat: category in categories --><li ng-repeat="category in categories" ui-sref-active="selected" selected-menu-item="" class="ng-scope ng-isolate-scope">
+                <a ui-sref="page.category({categorySlug:category.slug})" class="ng-binding" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/marketing-tools-2">Marketing Tools</a>
+            </li><!-- end ngRepeat: category in categories -->
+        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px; width: 165px; display: none;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px; height: 217px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 196px;"></div></div></ul>
+    </nav>
+</div></ng-include></div>
+    <div class="content-wrapper">
+        <div loading-indicator="" class="loading-indicator ng-hide"></div>
+        <!-- uiView: content --><div class="content animate ng-scope" ui-view="content"><div class="page-main ng-scope">
+  <welcome-screen show-only-on-state="page.featured" style="display: none;"><div class="welcome-screen">
+  <div class="dialog">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()" wix-bi="WS_CLOSED"><span>×</span></button>
+
+    <div class="title ng-binding">Welcome to the Wix App Market!</div>
+    <div class="description ng-binding" ng-bind-html="&#39;welcomeScreen.description&#39; | translate | trustAsHtml">Add powerful features and popular services to your site.<br>Grow your business and manage your online presence with a few clicks.</div>
+
+    <div class="primary-actions">
+      <a ui-sref="page.category({ categorySlug: &#39;forms&#39; })" ng-click="skipNextStateChangeSuccessEvent()" class="action contact" wix-bi="WS_ACTION_CLICKED" wix-bi-args="{ category: &#39;Forms&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/forms"><span class="ng-binding">Contact Your Users</span></a>
+      <a ui-sref="page.category({ categorySlug: &#39;social&#39; })" ng-click="skipNextStateChangeSuccessEvent()" class="action get-social" wix-bi="WS_ACTION_CLICKED" wix-bi-args="{ category: &#39;Social&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/social"><span class="ng-binding">Get Social</span></a>
+      <a ui-sref="page.category({ categorySlug: &#39;ecommerce&#39; })" ng-click="skipNextStateChangeSuccessEvent()" class="action sell-online" wix-bi="WS_ACTION_CLICKED" wix-bi-args="{ category: &#39;eCommerce&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/ecommerce"><span class="ng-binding">Sell Online</span></a>
+    </div>
+
+    <div class="separator"><span class="ng-binding">Or</span></div>
+
+    <div class="secondary-actions">
+      <a href="" ng-click="close()" class="action browse-featured-apps ng-binding" wix-bi="WS_ACTION_CLICKED" wix-bi-args="{ category: &#39;Featured&#39; }">Browse Featured Apps</a>
+    </div>
+  </div>
+</div></welcome-screen>
+  <div class="scroll-pane ps-container" wix-scroll-pane="" lr-infinite-scroll="loadMoreApps">
+    <!-- ngInclude: undefined --><ng-include src="&#39;views/includes/carousel.html&#39;" class="ng-scope"><div style="margin-right: 12px" class="ng-scope">
+    <!-- ngIf: promotedApplications.length && !experiment.isEnabled('specs.FrontPageCarouselEditor') && !experiment.isEnabled('specs.BestApps2014Editor') -->
+    <!-- ngIf: promotedApplications.length && (experiment.isEnabled('specs.FrontPageCarouselEditor') || experiment.isEnabled('specs.BestApps2014Editor')) --><div ng-if="promotedApplications.length &amp;&amp; (experiment.isEnabled(&#39;specs.FrontPageCarouselEditor&#39;) || experiment.isEnabled(&#39;specs.BestApps2014Editor&#39;))" class="carousel-3-0 ng-scope">
+        <slick init-onload="true" data="promotedApplications" slides-to-show="1" infinite="true" autoplay="true" autoplay-speed="5000" dots="true" arrows="false" ng-show="!carouselLoading" class="ng-isolate-scope slick-initialized slick-slider">
+            <!-- ngIf: experiment.isEnabled('specs.BestApps2014Editor') -->
+            <!-- ngRepeat: app in promotedApplications --><div class="slick-list draggable" tabindex="0"><div class="slick-track" style="opacity: 1; width: 5192px; transform: translate3d(-1947px, 0px, 0px);"><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide slick-cloned" index="-1" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/web-stat-2/overview">
+                    <img ng-src="//static.wixstatic.com/media/216094396b4098fdb20d148fa8306d1ee1be4e25b.png" src="216094396b4098fdb20d148fa8306d1ee1be4e25b.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide" index="0" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/wix-get-subscribers/overview">
+                    <img ng-src="//static.wixstatic.com/media/24238841865de4bdcf8721953961d62e2eff76a1b.png" src="24238841865de4bdcf8721953961d62e2eff76a1b.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide" index="1" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/comments-1/overview">
+                    <img ng-src="//static.wixstatic.com/media/21324764008868c4d151d7f8c1b9d4adcf19af263.png" src="21324764008868c4d151d7f8c1b9d4adcf19af263.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide slick-active" index="2" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/online-store-2/overview">
+                    <img ng-src="//static.wixstatic.com/media/2330973726d433f496996ad417d5a67456988621d.png" src="2330973726d433f496996ad417d5a67456988621d.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide" index="3" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/form-builder/overview">
+                    <img ng-src="//static.wixstatic.com/media/80158408210aa43d243f72cd083f9189e4235292.png" src="80158408210aa43d243f72cd083f9189e4235292.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide" index="4" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/events-calendar/overview">
+                    <img ng-src="//static.wixstatic.com/media/122579928bf7a6d55588fcfb49bf391c73a0b7180.png" src="122579928bf7a6d55588fcfb49bf391c73a0b7180.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide" index="5" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/web-stat-2/overview">
+                    <img ng-src="//static.wixstatic.com/media/216094396b4098fdb20d148fa8306d1ee1be4e25b.png" src="216094396b4098fdb20d148fa8306d1ee1be4e25b.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div><div ng-repeat="app in promotedApplications" class="ng-scope slick-slide slick-cloned" index="6" style="width: 649px;">
+                <a ui-sref="application.overview({ slug: app.slug })" open-in-modal="" modal-params="{ origin: &#39;ed_carousel&#39; }" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/wix-get-subscribers/overview">
+                    <img ng-src="//static.wixstatic.com/media/24238841865de4bdcf8721953961d62e2eff76a1b.png" src="24238841865de4bdcf8721953961d62e2eff76a1b.png">
+                </a>
+                <button class="button" ng-click="addApp(app, {origin: &#39;ed_carousel&#39;})"></button>
+            </div></div></div><!-- end ngRepeat: app in promotedApplications --><!-- end ngRepeat: app in promotedApplications --><!-- end ngRepeat: app in promotedApplications --><!-- end ngRepeat: app in promotedApplications --><!-- end ngRepeat: app in promotedApplications --><!-- end ngRepeat: app in promotedApplications -->
+        <ul class="slick-dots" style="display: block;"><li class=""><button type="button" data-role="none">1</button></li><li class=""><button type="button" data-role="none">2</button></li><li class="slick-active"><button type="button" data-role="none">3</button></li><li class=""><button type="button" data-role="none">4</button></li><li class=""><button type="button" data-role="none">5</button></li><li class=""><button type="button" data-role="none">6</button></li></ul></slick>
+    </div><!-- end ngIf: promotedApplications.length && (experiment.isEnabled('specs.FrontPageCarouselEditor') || experiment.isEnabled('specs.BestApps2014Editor')) -->
+</div></ng-include>
+    <application-grid applications="applications" bi-params="biParams" on-add="addApp(application, biParamsOverride)" class="ng-isolate-scope"><div class="application-grid new-app-boxes-design clearfix" new-app-boxes-design-hover="">
+    <!-- ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/comments-1/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/41627680ee9309a4391319a0b715a0927fdccdc7.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Comments by Uri Shaked | WIX App Market" src="41627680ee9309a4391319a0b715a0927fdccdc7.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Comments</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star half" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(488 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Add a Comments/ Talkback area and interact with your audience</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/wix-get-subscribers/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/854767828aad3042206ac61f36feaa89a4b4b131.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Wix Get Subscribers by Wix | WIX App Market" src="854767828aad3042206ac61f36feaa89a4b4b131.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Wix Get Subscribers</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator ng-hide" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding ng-hide" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star half" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(104 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Add a signup form to your Wix site to send email newsletters with ShoutOut</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/form-builder/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/21729484bec094f20b1f6bf59c6b8fc0c95ad6ae.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz" width="200" height="85" alt="Form Builder by 123ContactForm | WIX App Market" src="21729484bec094f20b1f6bf59c6b8fc0c95ad6ae.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Form Builder</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(110 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Dynamic contact forms, order forms, all-purpose surveys, RSVP forms and more!</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/events-calendar/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/33014301c0b53977919283d97fd55648ce70fe0c.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Events Calendar by Inffuse | WIX App Market" src="33014301c0b53977919283d97fd55648ce70fe0c.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Events Calendar</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(51 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Add a beautiful events calendar to your website and keep your audience updated.</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/display-any-social-feeds/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/147116861bd0a9d0156e095e469d0ed99fc5f2ff5.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz" width="200" height="85" alt="Display Any Social Feeds by TINT | WIX App Market" src="147116861bd0a9d0156e095e469d0ed99fc5f2ff5.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Display Any Social Feeds</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(155 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Display any social content to engage and convert your visitors.</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/web-stat-2/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/228075853840fdecc1eed3e8f992af6b7831c8057.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Web-Stat by Web-Stat | WIX App Market" src="228075853840fdecc1eed3e8f992af6b7831c8057.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Web-Stat</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star half" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(167 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Measure your traffic and observe your visitors in real time. One-click install.</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/store-6/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/263323308ea39d82d9857a5bf21e4903a9c377d75.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz" width="200" height="85" alt="Store by Shopify | WIX App Market" src="263323308ea39d82d9857a5bf21e4903a9c377d75.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Store</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><span class="free-trial ng-binding ng-scope" ng-switch-when="true">Free 14 day(s) trial</span><!-- ngSwitchDefault:  --></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(64 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Create a beautiful and secure online shop directly on your Wix website. </p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/site-search-2/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/295487962c819a8d00a6091d8607621163195985.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Site Search by InstantSearch+ | WIX App Market" src="295487962c819a8d00a6091d8607621163195985.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Site Search</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star half" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(124 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Add a great search to your site. Find out what users search for. Get SEO insight</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/online-store-2/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/190435576bd8c8ec00cfaa873435fd4d8a53e50a3.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Online Store by Ecwid | WIX App Market" src="190435576bd8c8ec00cfaa873435fd4d8a53e50a3.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Online Store</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star half" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(63 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Add a FREE online shop to your Wix site in minutes. Sell on Facebook and mobile!</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/social-media-stream/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/1665887290c1486c44f5abf2d19e830d5c6a51a80.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Social Media Stream by PowerUP | WIX App Market" src="1665887290c1486c44f5abf2d19e830d5c6a51a80.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Social Media Stream</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star full" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(208 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Stream Facebook ,Twitter ,Instagram, Youtube &amp; Pinterest feeds to your site</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/form-builder-plus/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/897626774af9fcb814931c935a11124df09de058.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz" width="200" height="85" alt="Form Builder Plus+ by POWr | WIX App Market" src="897626774af9fcb814931c935a11124df09de058.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Form Builder Plus+</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star half" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(142 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Create a fully-customized form in seconds!</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/wix-hotels/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/360217868458fb66a49fef0b290337855a74a0e1.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Wix Hotels by Wix | WIX App Market" src="360217868458fb66a49fef0b290337855a74a0e1.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Wix Hotels</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding ng-hide" ng-show="!application.premiumOnly">Free</span><span class="separator ng-hide" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(70 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Start taking direct reservations on your website with Wix Hotels
+
+</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/mpzmail-email-marketing-2/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/4382141652177d672a61f243d3d1a9aec287378d.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="MPZMail Email Marketing by MPZMail | WIX App Market" src="4382141652177d672a61f243d3d1a9aec287378d.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">MPZMail Email Marketing</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star full" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(397 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Provide an email signup form on your website, and then design and send emails</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/virtual-live-chat/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/903587630def41533d1cf4d6dfd509bc10323a07.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Virtual Live Chat by Virtual Spirits | WIX App Market" src="903587630def41533d1cf4d6dfd509bc10323a07.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Virtual Live Chat</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><span class="free-trial ng-binding ng-scope" ng-switch-when="true">Free 30 day(s) trial</span><!-- ngSwitchDefault:  --></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star half" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(41 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Virtual Live Chat for online sales and support chat. Added to +150,000 wix sites</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/simple-google-maps/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/29514591b2a8ee76278f7478fac185d4afb0f339.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Simple Google Maps by makronetz | WIX App Market" src="29514591b2a8ee76278f7478fac185d4afb0f339.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Simple Google Maps</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars -->
+<!-- ngIf: showAddedToSite --><div class="added-to-site ng-scope" translate="appStats.addedThisApp" translate-values="{downloadsAllTime: downloadsAsNumber}" ng-if="showAddedToSite">124,714 added this app</div><!-- end ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Impress visitors by adding rich and intuitive Google maps to your site.</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/live-chat-room/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/1388497136ca1c5c972a3d031632358fd9ef141af.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz" width="200" height="85" alt="Live Chat Room by RumbleTalk chat platform | WIX App Market" src="1388497136ca1c5c972a3d031632358fd9ef141af.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Live Chat Room</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star full" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(59 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Professional chat room for your site. Best hosted group chat-room with style.
+</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/social-comments/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/142556308590ce3e48e4fddf72c84e523c1888673.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Social Comments by Pnyxe | WIX App Market" src="142556308590ce3e48e4fddf72c84e523c1888673.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Social Comments</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars -->
+<!-- ngIf: showAddedToSite --><div class="added-to-site ng-scope" translate="appStats.addedThisApp" translate-values="{downloadsAllTime: downloadsAsNumber}" ng-if="showAddedToSite">214,764 added this app</div><!-- end ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Let your visitors add comments and engage in discussions directly on your site.</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/inffuse-testimonials/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/1343069835761f0d301eebc9be7760aa723e36336.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Inffuse Testimonials by Inffuse | WIX App Market" src="1343069835761f0d301eebc9be7760aa723e36336.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Inffuse Testimonials</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars --><div class="reviews-rating ng-isolate-scope disabled" ng-class="{disabled: disabled}" ng-if="showStars" disabled="disabled" value="app.reviews.averageRating" total="app.reviews.totalReviews" show-text="true">
+  <!-- ngIf: value || !disabled --><a class="stars has-reviews ng-scope active" ng-if="value || !disabled" ng-class="{active: link || clickFn}" ng-href="">
+    <span class="star full" ng-class="getClassForStar(value, 1)" ng-click="vote(1)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(1)">
+    </span><span class="star full" ng-class="getClassForStar(value, 2)" ng-click="vote(2)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(2)">
+    </span><span class="star full" ng-class="getClassForStar(value, 3)" ng-click="vote(3)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(3)">
+    </span><span class="star half" ng-class="getClassForStar(value, 4)" ng-click="vote(4)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(4)">
+    </span><span class="star empty" ng-class="getClassForStar(value, 5)" ng-click="vote(5)" ng-mouseleave="hover(undefined)" ng-mouseover="hover(5)">
+    </span>
+    <!-- ngIf: showText --><span ng-if="showText" class="text ng-scope" translate="reviews.rating.total" translate-values="{total: total}">(40 Reviews)</span><!-- end ngIf: showText -->
+  </a><!-- end ngIf: value || !disabled -->
+  <!-- ngIf: !value && disabled -->
+</div><div class="popover ng-scope right" ng-class="[position, class]" style="display: none;"><div class="arrow"></div><div class="popover-content ng-binding"></div></div><!-- end ngIf: showStars -->
+<!-- ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Add great looking testimonials to your website! It's super easy!</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/simpl-e-schedule/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/109945941ff7ff6d3f68deb4eac07db639f46a86b.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Simpl-e-Schedule by ShareiiiT | WIX App Market" src="109945941ff7ff6d3f68deb4eac07db639f46a86b.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Simpl-e-Schedule</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars -->
+<!-- ngIf: showAddedToSite --><div class="added-to-site ng-scope" translate="appStats.addedThisApp" translate-values="{downloadsAllTime: downloadsAsNumber}" ng-if="showAddedToSite">68,900 added this app</div><!-- end ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Build a scheduler and let your visitors register for your events instantly.
+</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/customer-reviews/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/222800661867abb35daf1f7a7d45d55da3930d47c.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz" width="200" height="85" alt="Customer Reviews by James Brake | WIX App Market" src="222800661867abb35daf1f7a7d45d55da3930d47c.png_srz_200_85_85_22_0.50_1.20_0.00_png_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Customer Reviews</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars -->
+<!-- ngIf: showAddedToSite --><div class="added-to-site ng-scope" translate="appStats.addedThisApp" translate-values="{downloadsAllTime: downloadsAsNumber}" ng-if="showAddedToSite">41,048 added this app</div><!-- end ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Easily get customer feedback and post client reviews directly on your website.</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications --><div class="application ng-scope new-app-hover-button" ng-repeat="application in applications" ng-class="{&#39;new-app-hover-button&#39;: experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;), &#39;old-app-hover-button&#39;: !experiment.isEnabled(&#39;specs.NewAppHoverButton&#39;)}">
+        <div class="application-content">
+            <div class="application-details">
+                <a class="app-link" ui-sref="application.overview({slug: application.slug})" open-in-modal="" modal-params="{&quot;category&quot;:&quot;Featured&quot;,&quot;origin&quot;:&quot;ed_market&quot;}" href="http://editor.wix.com/app-market-editor/5890b6ac-be8d-4294-9239-f08669e745f0?eo=aHR0cDovL2VkaXRvci53aXguY29t&lang=en&compId=MarketPanel&siteId=17f7299e-426d-462f-ba09-7d54989d9fb3&newWixStores=false#/social-media-icons/overview">
+                    <div class="application-advert">
+                        <img ng-src="//static.wixstatic.com/media/847252555b05dd8b84599806a52a72e154a5e84e.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz" width="200" height="85" alt="Social Media Icons by POWr | WIX App Market" src="847252555b05dd8b84599806a52a72e154a5e84e.jpg_srz_200_85_85_22_0.50_1.20_0.00_jpg_srz">
+                    </div>
+                    <!-- ngIf: application.hasMobile --><div class="application-mobile-icon ng-scope" ng-if="application.hasMobile"></div><!-- end ngIf: application.hasMobile -->
+                    <h3 class="application-title ng-binding has-mobile" ng-class="{&#39;has-mobile&#39;: application.hasMobile}">Social Media Icons</h3>
+
+                    <div class="application-pricing">
+                      <application-pricing application="application" class="ng-isolate-scope"><div ng-switch="" on="application.isTrial"><!-- ngSwitchWhen: true --><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope"><span class="free ng-binding" ng-show="!application.premiumOnly">Free</span><span class="separator" ng-show="!application.premiumOnly &amp;&amp; application.hasPremium"> / </span><span class="premium ng-binding" ng-show="application.hasPremium || application.premiumOnly || application.externalPremium">Premium</span></span></div></application-pricing>
+                    </div>
+                    <div class="application-ratings clearfix">
+                        <app-stats app="application" class="ng-isolate-scope"><!-- ngIf: showStars -->
+<!-- ngIf: showAddedToSite --><div class="added-to-site ng-scope" translate="appStats.addedThisApp" translate-values="{downloadsAllTime: downloadsAsNumber}" ng-if="showAddedToSite">85,055 added this app</div><!-- end ngIf: showAddedToSite -->
+<!-- ngIf: showNew --></app-stats>
+                    </div>
+                    <div class="application-description">
+                        <p ng-bind-html="application.teaser" class="ng-binding">Don't settle for cookie-cutter icons. Customize your own in seconds!</p>
+                    </div>
+                </a>
+                <a class="button button-orange ng-binding" add-to-site="" app="application" ng-click="addApplication(application, {origin: &#39;ed_market&#39;})">
+                    Add to Site
+                </a>
+            </div>
+        </div>
+    </div><!-- end ngRepeat: application in applications -->
+</div>
+
+</application-grid>
+    <!-- ngIf: popularApplications -->
+    <!-- ngIf: popularApplications -->
+    <div class="loading-indicator-simple" ng-class="{ visible: loading }"></div>
+  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px; width: 700px; display: none;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px; height: 375px; display: inherit;"><div class="ps-scrollbar-y" style="top: 0px; height: 91px;"></div></div></div>
+</div></div>
+    </div>
+</div></div>
+
+<script src="jquery.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="angular-sanitize.min.js"></script>
+<script src="angular-translate.min.js"></script>
+<script src="lodash.js"></script>
+<script src="TweenMax.min.js"></script>
+
+<script src="AppMarket.js"></script>
+
+<script src="angular-locale_en.js"></script>
+<script src="messages_en.js"></script>
+<script src="messages_en(1).js"></script>
+
+<!--[if IE 9]>
+<script src="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/placeholders-js/lib/utils.js"></script>
+<script src="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/placeholders-js/lib/main.js"></script>
+<script src="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/placeholders-js/lib/adapters/placeholders.jquery.js"></script>
+<script src="http://static.parastorage.com/services/market-editor/1.159.0/bower_components/requestAnimationFrame/app/requestAnimationFrame.js"></script>
+<![endif]-->
+
+<!--  -->
+<script src="modules.js"></script>
+<!--  -->
+
+<!--  -->
+<script src="scripts.js"></script>
+<!--  -->
+
+<!--  -->
+
+<script>
+  angular.module('marketEditorApp').constant({
+    biUrl: 'http://frog.wix.com/',
+    usersDomain: 'https://users.wix.com/wix-users/',
+    lang: 'en',
+    apiEndpoint: 'http://market.apps.wix.com/api/market',
+    appMarketApiUrl:'http://www.wix.com/app-market-api/api',
+    metaSiteId: '5890b6ac-be8d-4294-9239-f08669e745f0',
+    suggestAnAppEndpoint: 'wishList',
+    experiments: {"specs.FrontPageCarouselEditor":"true","specs.NewAppBoxesDesign":"true","specs.FuzzySearchSpec":"true","specs.PermissionRequestEditor":"true","specs.SyncSlugsFromOldApi":"true","specs.NewApiEditor":"true","specs.WixReviewsEditor":"true","specs.NewCategoriesDesign":"true","specs.NewAppModal":"true","specs.WishList":"true","specs.LocalizedPriceEditor":"true","specs.PendingAppsEditor":"true","specs.NewAppHoverButton":"true","specs.BestByWixEditor":"true","specs.NewSearchResultsDesign":"true"},
+    appMarketStaticsUrl: 'http://static.parastorage.com/services/market-editor/1.159.0/',
+    reviewsApiUrl: '/_api/reviews-server',
+    mixPanelProjectKey: 'false' === 'true' ? '119aea4e3976f274992d9b5586394232' : 'e54cc99db648d457696311a779c030de'
+  });
+</script>
+
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+</script>
+<!-- end Mixpanel -->
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"c99d7f1ab0","agent":"js-agent.newrelic.com\/nr-632.min.js","beacon":"bam.nr-data.net","applicationTime":1,"applicationID":"3654060,3968614","transactionName":"ZFAHNkNYXUBQVEUKXF0aNhJDUF1UclhfF0FcWQkHQxZIXlRDUDBaR1AsBkwZG3R0Yxg=","queueTime":0}</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=29';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script>
+
+<script type="text/javascript" id="">function setCookie(a,d,b){var c=new Date;c.setTime(c.getTime()+864E5*b);b="; expires\x3d"+c.toGMTString();document.cookie=a+"\x3d"+d+b}function getParam(a){return(a=RegExp("[?\x26]"+a+"\x3d([^\x26]*)").exec(window.location.search))&&decodeURIComponent(a[1].replace(/\+/g," "))}var gclid=getParam("gclid");if(gclid){var gclsrc=getParam("gclsrc");gclsrc&&-1===gclsrc.indexOf("aw")||setCookie("gclid",gclid,90)};</script><div style="display: none; visibility: hidden;">
+<script type="text/javascript">if(document.referrer){var ord=1E12*Math.random();document.write('\x3cSCRIPT language\x3d"JavaScript1.1" SRC\x3d"//ad.doubleclick.net/adj/N34703.197812NSO.CODESRV/B8451860.114426361;dcadv\x3d4636892;sz\x3d1x2;ord\x3d'+ord+'?"\x3e\x3c/SCRIPT\x3e')};</script><script language="JavaScript1.1" src="B8451860.114426361"></script></div></body></html>

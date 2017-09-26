@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio de introduccion a JavaScrip</title>
+	<style type="text/css">
+		
+		div{
+			border: 1px solid black;
+			width:500px;
+			height: 300px; 
+		}
+	</style>
+</head>  
+<body>
+
+  
+   <div id="midiv1" onmouseover="mi_function_1();"  onmouseout="mifuncion2();">hola william estamos en la cambio del borde de color con javascrip </div>
+   <div id="midiv2"></div>
+
+  
+
+
+
+    <script>
+	     function mi_function_1(){
+	     	  document.getElementById('midiv1').style.border ='4px solid blue';
+	     	  document.getElementById('midiv1').style.backgroundColor='green';
+	     	  document.getElementById('midiv2').style.width='250px';
+	     	  document.getElementById('midiv2').style.border='4px solid blue';
+	     }
+
+	     function mifuncion2(){
+	     	 document.getElementById('midiv1').style.border ='1px solid black';
+	     	 document.getElementById('midiv2').style.border ='1px solid black';
+	     	 document.getElementById('midiv1').style.backgroundColor='white';
+	     	 document.getElementById('midiv2').style.width='500px';
+	     }
+    </script>
+
+</body>
+</html>
+
+
+

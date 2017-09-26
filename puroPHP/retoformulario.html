@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<title></title>
+	<style type="text/css">
+		div{
+			border: 1px  black;
+			width: 500px;
+			height: 1000px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+   <div>
+
+   			<form action="guardaDatosFormulario.php" method="POST">
+ 
+					  	<h3>Nombres</h3><input type="text" name="firstName" maxlength="50" placeholder="Primer nombre" autofocus="autofocus">  <input type="text" name="SecondName" maxlength="50" placeholder="segundo nombre">
+					  	<h3>Apellidos</h3><input type="text" name="apellidos" maxlength="50" placeholder="primer apellido">  <input type="text" name="segundoApellido" maxlength="50" placeholder="Segundo apellido">
+					  	<h3>celular</h3><input type="number" name="celular" placeholder="Ingrese su celular" ><br>
+					  	<h3>e-mail</h3><input type="email" name="email" placeholder="ingrese su e-mail"><br>
+
+					 
+					    <h3>Como encontro nuestra pagina de internet</h3>
+					    
+					    <label for="internet">Internet</label>
+					    <input type="radio" name="radioInternet" id="internet">
+
+					    <label for="facebook">facebook</label>
+					    <input type="radio" name="radioFacebook" id="internet">
+
+					    <label for="television">television</label>
+					    <input type="radio" name="radioTelevision" id="radioTelevision">
+
+					    <label for="radio">Radio</label><br>
+					    <input type="radio" name="radioRadio" id="radio">
+
+					    <label for="otro">Otro</label>
+					    <textarea  placeholder="indique otro medio "></textarea><br><br>
+
+
+					    <h3>Recomendaria la pagina</h3>
+					    
+					    <label for="recomendacion">Si</label>
+					    <input type="radio" name="recomendacion" id="recomendacion" value="Si"  >
+
+					    <label for="recomendacion">No</label>
+					    <input type="radio" name="recomendacion" id="recomendacion" value="No">
+
+					    
+
+					    <h3>Enumere por favor los servicios que utilizaria</h3>
+					    <textarea rows="11" cols="50" placeholder="escribir aqui"></textarea>
+					    
+					   <table></table>
+					    <button>Enviar Datos</button>
+
+
+					  	
+
+
+
+   </div>
+
+
+
+   <div>
+
+
+		   	<h3>Le fue facil navegar por la pagina web</h3>
+		   	<label for="si">Si</label>
+		    <input type="radio" name="radioSi" id="si" ">
+
+		    <label for="no">No</label>
+		    <input type="radio" name="radioNo" id="no" ">
+
+		    <label for="Maso">Mas o menos </label>
+		    <input type="radio" name="Maso" id="Maso" "><br>
+		    <textarea placeholder="Que fue lo que mas le parecio dificil "></textarea>
+
+		    <h3>Indique su fecha de nacimiento</h3>
+		    <input type="date" name=""><br><br>
+
+		    <h3>Indique su deporte favorito </h3>
+		    <label for="natacion">Natacion</label>
+		    <input type="radio" name="deporte" id="natacion" value="natacion">
+		    <label for="futbol">futbol</label>
+		    <input type="radio" name="deporte" id="futbol" value="futbol">
+		    <label for="basketball">basketball</label>
+		    <input type="radio" name="basketball" id="basketball" ">
+		    <label for="atletismo">atletismo</label>
+		    <input type="radio" name="atletismo" id="atletismo" ">
+		    <h3>Especifique con sus palabras la utilidad de esta pagina </h3>
+		    <textarea rows="6" cols="60" placeholder="escriba aqui"></textarea><br>
+		    <h3>Cómo valora las carateristicas a la hora de comprar</h3><br>
+
+
+
+		    <table id="t01" >  
+		              <td>     </td> <td>importante  </td> <td>poco importante</td> <td>nada importante</td><td>sustancial  </td> <td>caracteristico</td> <td>feliz</td>
+
+		              <tr>
+					    <td>Precio</td>
+					    <td><input type="radio" name="precio" value="importante"></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>						    			    
+					  </tr>
+					  <tr>
+					    <td>tamana</td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>						    			    
+					  </tr>
+					  <tr>
+					    <td>diseno</td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>						    			    
+					  </tr>
+					  <tr>
+					    <td>calidad</td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td> 
+					    <td><input type="radio" name=""></td>
+					    <td><input type="radio" name=""></td>						    			    
+					  </tr>
+
+					  
+
+					  
+		    </table><br><br><br>
+
+		    <button>Enviar Datos</button>
+
+		   
+
+        </form>
+
+   </div>
+
+  
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MI PRIMER TALLER DE CAJAS</title>
+	<style>
+		div {
+			font-family: OpenSans;
+			float: left;
+		}
+		.principalConteiner {
+			width: 500px;
+		}
+
+		.encabezado {
+			border: 0px;
+			border-style: solid;
+			border-color: red;
+			padding: 0px;
+			margin: 5px;
+			height: 100px;
+			width: 97%;
+		}
+		.menuSuperior {
+			border: 2px;
+			border-style: solid;
+			border-color: blue;
+			padding: 5px;
+			margin: 5px;
+			height: 60px;
+			width: 96%;
+		}
+		.opcionesMS {
+			text-align: center;
+			vertical-align: middle;
+			border: 2px;
+			border-style: solid;
+			border-color: blue;
+			padding: 5px;
+			margin: 5px;
+			height: 60px;
+			width: 80px;
+			height: 36px;
+		}
+		.carritoCompras {
+			float:right;
+			margin-right: 25px;
+			font-size:20px;
+		}
+		.logo {
+			margin-right: 20px;
+		}
+		.menuLateral {
+			border: 2px;
+			border-style: solid;
+			border-color: black;
+			padding: 3px;
+			margin: 5px;
+			height: auto;
+			width: 15%;
+		}
+		.opcionesML {
+			text-align: center;
+			vertical-align: middle;
+			border: 2px;
+			border-style: solid;
+			border-color: orange;
+			padding: 5px;
+			margin: 5px;
+			width: 85%;
+			height: 36px;
+		}
+		.bannerLateral {
+			text-align: center;
+			vertical-align: middle;
+			padding: 5px;
+			margin: 5px;
+			width: 90%;
+			height: 155px;
+
+		}
+		.contenido {
+			border: 2px;
+			border-style: solid;
+			border-color: blue;
+			padding: 3px;
+			margin: 5px;
+			height: auto;
+			width: 80%;
+		}
+		.productos {
+			border: 1px;
+			border-style: dotted;
+			padding: 3px;
+			margin: 30px;
+			height: auto;
+			width: auto;
+			font-size: 12px;	
+		}	
+		.imagenProducto {
+			text-align: center;
+			margin: auto;
+			border: 2px;
+			border-style: solid;
+			border-color: orange;
+			padding: 3px;
+			height: 100px;
+			width: 110px;
+			font-size: 12px;		
+		}
+		.piePagina {
+			border: 2px;
+			border-style: solid;
+			border-color: black;
+			padding: 5px;
+			margin: 5px;
+			height: 50px;
+			width: 96%;
+		}	
+
+	</style>
+</head>
+<body>
+	<script>
+		var cantidadProductosCarrito=0;
+	</script>
+
+	<div class="encabezado">
+		<iframe id="webRT" src="http://www.rapitiendas.com" height="100%" width="100%" >		
+		</iframe>
+	</div>
+	<div class="menuSuperior">
+		<div class="logo">
+			<img src="img/LogoRT.png" width="90" alt="Logo de Rapitiendas.com" >
+		</div>
+		<div class="opcionesMS">
+			Menu 
+		</div>
+		<div class="opcionesMS">
+			Ventajas 
+		</div>
+		<div class="opcionesMS">
+			Marcas Aliadas
+		</div>
+		<div class="opcionesMS">
+			Noticias
+		</div>
+		<div class="opcionesMS">
+			Tenderos Ejemplares
+		</div>
+		<div style="font-family: OpenSans; font-size: 24px;" >
+			<strong>#LaTiendaentuMano</strong>
+		</div>
+		<div class="carritoCompras">
+			<img src="img/shoppingKart.png" height="50" > 
+			<b id="carrito">(0)</b>
+		</div>
+	</div>
+	<div class="menuLateral">
+		<div class="opcionesML">
+			Home 
+		</div>
+		<div class="opcionesML">
+			Quienes Somos
+		</div>
+		<div class="opcionesML">
+			Contactenos
+		</div>
+		<div class="opcionesML">
+			Como Funciona
+		</div>
+		<div class="bannerLateral">
+			<iframe id="forecast_embed" type="text/html" frameborder="0" width="95%" src="http://forecast.io/embed/#lat=4.684756&lon=-74.052363&name=Bogota"> </iframe>
+		</div>
+	</div>
+	<div class="contenido">
+		
+		<!--Coca-Cola-->
+		<div id="divCocaCola" class="productos">
+			<div id="cocaCola"  class="imagenProducto" onmouseover="resaltarCocaCola();" onmouseleave="desResaltarCocaCola();" 
+				onclick="seleccionarCocaCola();" ondblclick="desSeleccionarCocaCola();" >
+				<img src="img/1.jpg" height="80"> 
+				<br>
+				CocaCola $1.900
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Pandebono-->
+		<div id="divPandebono" class="productos">
+			<div id="pandebono" class="imagenProducto" onmouseover="resaltarPandebono();" onmouseleave="desResaltarPandebono();" 
+				onclick="seleccionarPandebono();" ondblclick="desSeleccionarPandebono();" >
+				<img src="img/2.jpg" height="80"> 
+				<br>
+				Pandebono $2.000
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();"> 
+		</div>
+		
+		<!--Leche-->	
+		<div class="productos">
+			<div id="leche"  class="imagenProducto" onmouseover="resaltarLeche();" onmouseleave="desResaltarLeche();" 
+				onclick="seleccionarLeche();" ondblclick="desSeleccionarLeche();">
+				<img src="img/3.jpg" height="80"> 
+				<br>
+				Leche $2.300
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Pan Tajado-->
+		<div class="productos">
+			<div id="panTajado" class="imagenProducto" onmouseover="resaltarPan();" onmouseleave="desResaltarPan();" 
+				onclick="seleccionarPan();" ondblclick="desSeleccionarPan();">
+				<img src="img/4.jpg" height="80"> 
+				<br>
+				Pan Tajado $4.700
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Mantequilla-->	
+		<div class="productos">
+			<div id="mantequilla" class="imagenProducto" onmouseover="resaltar('mantequilla');" onmouseleave="desResaltar('mantequilla')" 
+				onclick="seleccionar('mantequilla');" ondblclick="desSeleccionar('mantequilla');">
+				<img src="img/5.jpg" height="80"> 
+				<br>
+				Mantequilla $3.900
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Jamon-->
+		<div class="productos">
+			<div id="jamon" class="imagenProducto" onmouseover="resaltar('jamon');" onmouseleave="desResaltar('jamon')" 
+				onclick="seleccionar('jamon');" ondblclick="desSeleccionar('jamon');">
+				<img src="img/6.jpg" height="80"> 
+				<br>
+				Jamon $11.700
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Huevos-->
+		<div class="productos">
+			<div id="huevos" class="imagenProducto" onmouseover="resaltar('huevos');" onmouseleave="desResaltar('huevos')" 
+				onclick="seleccionar('huevos');" ondblclick="desSeleccionar('huevos');">
+				<img src="img/7.jpg" height="80"> 
+				<br>
+				Huevos x 6 $1.800
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Arepa-->
+		<div class="productos">
+			<div class="imagenProducto" id="arepa" onmouseover="resaltar('arepa');" onmouseleave="desResaltar('arepa')" 
+				onclick="seleccionar('arepa');" ondblclick="desSeleccionar('arepa');">
+				<img src="img/8.jpg" height="80"> 
+				<br>
+				Arepa x 6 $5.400
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Queso-->
+		<div class="productos" >
+			<div class="imagenProducto" id="queso" onmouseover="resaltar('queso');" onmouseleave="desResaltar('queso')" 
+				onclick="seleccionar('queso');" ondblclick="desSeleccionar('queso');">
+				<img src="img/9.jpg" height="80"> 
+				<br>
+				Queso $9.400
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+		
+		<!--Cafe-->
+		<div class="productos" >
+			<div class="imagenProducto" id="cafe" onmouseover="resaltar('cafe');" onmouseleave="desResaltar('cafe')" 
+				onclick="seleccionar('cafe');" ondblclick="desSeleccionar('cafe');">
+				<img src="img/10.jpg" height="80"> 
+				<br>
+				Cafe Libra $4.200
+
+			</div>
+			<br>
+			<img align="center" src="img/shoppingKart.png" height="30" onclick="aumentarCantidadCarrito();">
+			<img style="margin-top: 3px" align="right" src="img/trash.png" height="25" onclick="disminuirCantidadCarrito();">
+		</div>
+	
+	</div>
+	<div class="piePagina">
+		Rapitiendas.com &reg All Rights Reserved 2016.
+		<br>   
+		<style>.ig-b- { display: inline-block; }
+				.ig-b- img { visibility: hidden; }
+				.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+				.ig-b-v-24 { width: 137px; height: 24px; background: url(http://badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
+				@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+				.ig-b-v-24 { background-image: url(http://badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
+			<a href="https://www.instagram.com/rapitiendas/?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" />
+			</a>
+	</div>
+</div>	
+
+
+<script>
+	
+	//Coca-Cola
+	function resaltarCocaCola(){
+		document.getElementById('cocaCola').style.borderWidth="5px";
+		document.getElementById('cocaCola').style.padding="0px";
+	}
+	function desResaltarCocaCola(){
+		document.getElementById('cocaCola').style.borderWidth="2px";
+		document.getElementById('cocaCola').style.padding="3px";
+	}
+	function seleccionarCocaCola(){
+		document.getElementById('cocaCola').style.borderColor='blue';
+	}
+	function desSeleccionarCocaCola(){
+		document.getElementById('cocaCola').style.borderColor='orange';
+	}
+	
+	//Pandebono
+	function resaltarPandebono(){
+		document.getElementById('pandebono').style.borderWidth="5px";
+		document.getElementById('pandebono').style.padding="0px";
+	}
+	function desResaltarPandebono(){
+		document.getElementById('pandebono').style.borderWidth="2px";
+		document.getElementById('pandebono').style.padding="3px";
+	}
+	function seleccionarPandebono(){
+		document.getElementById('pandebono').style.borderColor='blue';
+	}
+	function desSeleccionarPandebono(){
+		document.getElementById('pandebono').style.borderColor='orange';
+	}
+
+	//Leche
+	function resaltarLeche(){
+		document.getElementById('leche').style.borderWidth="5px";
+		document.getElementById('leche').style.padding="0px";
+	}
+	function desResaltarLeche(){
+		document.getElementById('leche').style.borderWidth="2px";
+		document.getElementById('leche').style.padding="3px";
+	}
+	function seleccionarLeche(){
+		document.getElementById('leche').style.borderColor='blue';
+	}
+	function desSeleccionarLeche(){
+		document.getElementById('leche').style.borderColor='orange';
+	}
+
+	//Pan Tajado
+	function resaltarPan(){
+		document.getElementById('panTajado').style.borderWidth="5px";
+		document.getElementById('panTajado').style.padding="0px";
+	}
+	function desResaltarPan(){
+		document.getElementById('panTajado').style.borderWidth="2px";
+		document.getElementById('panTajado').style.padding="3px";
+	}
+	function seleccionarPan(){
+		document.getElementById('panTajado').style.borderColor='blue';
+	}
+	function desSeleccionarPan(){
+		document.getElementById('panTajado').style.borderColor='orange';
+	}
+
+	//Resto de Productos GENERICO
+	function resaltar(producto){
+		document.getElementById(producto).style.borderWidth="5px";
+		document.getElementById(producto).style.padding="0px";
+	}
+	function desResaltar(producto){
+		document.getElementById(producto).style.borderWidth="2px";
+		document.getElementById(producto).style.padding="3px";
+	}
+	function seleccionar(producto){
+		document.getElementById(producto).style.borderColor='blue';
+	}
+	function desSeleccionar(producto){
+		document.getElementById(producto).style.borderColor='orange';
+	}
+	
+	//Carrito
+	function disminuirCantidadCarrito() {
+		if (cantidadProductosCarrito<=0) {
+			document.getElementById('carrito').innerHTML="(0)";
+		} 
+		else {
+			cantidadProductosCarrito=cantidadProductosCarrito-1;
+			document.getElementById('carrito').innerHTML="("+cantidadProductosCarrito+")";
+		}
+	}
+	function aumentarCantidadCarrito() {
+		cantidadProductosCarrito=cantidadProductosCarrito+1;
+		document.getElementById('carrito').innerHTML="("+cantidadProductosCarrito+")";
+
+	}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

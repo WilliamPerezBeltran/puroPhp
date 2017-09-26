@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0187)http://editor.wix.com/static/services/media-gallery-ng/0.346.0/assets/media_gallery/index.html?mediaGalleryStaticBaseUrl=http://static.parastorage.com/services/media-gallery-ng/0.346.0/#/ -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+  <meta charset="utf-8">
+
+  <script type="text/javascript" async="" src="_Incapsula_Resource(1)"></script><script type="text/javascript">
+    //if(navigator.userAgent.indexOf('MSIE')==-1 || (document.documentMode && document.documentMode>9) ) {
+    try {
+      // parent have original domain
+      parent.document.domain;
+    }
+    catch(e) {
+      // parent have changed domain, we have to do it too
+      document.domain = document.domain.split('.').slice(-2).join('.');
+    }
+    //}
+  </script>
+
+  <!--[if IE]>
+  <script src="//static.wix.com/services/third-party/xdomain/0.6.11/xdomain.min.js"></script>
+  <script>
+    // CORS Fix throw iframe for IE8-9
+    if ((/MSIE\s*[89]/i).test(window.navigator.userAgent || '') || (document.documentMode &&  document.documentMode <= 9)) {
+      siteUrl = document.location.protocol + '//' + document.location.hostname;
+
+      xdomain.slaves({
+        'http://files.wix.com':                   '/assets/iframe_cors_proxy.html?site_url=' + siteUrl, // private media
+        'http://files-test.wix.com':              '/assets/iframe_cors_proxy.html?site_url=' + siteUrl,
+        'http://publicmedia.wix.com':             '/assets/iframe_cors_proxy.html?site_url=' + siteUrl, // public media
+        'http://wixpublicmedia-test.appspot.com': '/assets/iframe_cors_proxy.html?site_url=' + siteUrl,
+        'http://pix.wix.com':                     '/assets/iframe_cors_proxy.html?site_url=' + siteUrl  // external services
+      });
+    }
+  </script>
+  <![endif]-->
+
+
+<!--[if !IE]> -->
+<script type="text/javascript">
+if(navigator.userAgent.indexOf('MSIE')==-1 || (document.documentMode && document.documentMode>9) ) {
+  document.write('<scr' + 'ipt src="http://sdk-cooladata-com.global.ssl.fastly.net/js/cooladata-javascript-sdk-2.0.0.min.js"></scr' + 'ipt>');
+}
+</script><script src="cooladata-javascript-sdk-2.0.0.min.js"></script>
+<!-- <![endif]-->
+
+  <script type="text/javascript">
+    window.NREUMQ = window.NREUMQ || [];
+    NREUMQ.push(["mark","firstbyte", (new Date()).getTime()]);
+
+    (function(){
+
+      var getUrlParameter=function(name)
+      {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+      };
+
+      var parser = document.createElement('a');
+      var staticBaseUrl = getUrlParameter('mediaGalleryStaticBaseUrl') || '';
+
+      parser.href = staticBaseUrl;
+      if (
+          !!staticBaseUrl
+              && (parser.protocol == 'http:' || parser.protocol == 'https:')
+              && (/^[a-z0-9\.-]+$/).test(parser.hostname)
+              && (/^[a-z0-9\._\/-]+$/).test(parser.pathname)
+          ) {
+        window.STATIC_URL_PREFIX = parser.protocol
+            + '//'
+            + parser.hostname.replace('static.wix.com', 'static.parastorage.com')
+            + parser.pathname.replace(/^\/*/, '/').replace(/\/*$/, '/')
+            + 'assets/media_gallery/';
+      }
+      else {
+        window.STATIC_URL_PREFIX = '';
+      }
+      //console.log(STATIC_URL_PREFIX);
+      //window.STATIC_URL_PREFIX=(getUrlParameter('mediaGalleryStaticBaseUrl') || '')
+      //if(STATIC_URL_PREFIX!='') {
+      //  STATIC_URL_PREFIX=STATIC_URL_PREFIX.replace(/\/?(#.*)?$/, '/assets/media_gallery/').replace('static.wix.com', 'static.parastorage.com');
+      //}
+
+    })();
+  </script>
+
+  <script src="lodash.min.js"></script>
+  <!-- expandFiles:notifiers -->
+  <script>
+    document.write('<'+'script src="' + STATIC_URL_PREFIX + 'scripts/base_notifiers_min.js"></'+'script>');
+  </script><script src="base_notifiers_min.js"></script>
+  <!-- endExpandFiles -->
+
+  <script>
+    MediaGallery.appLoadNotifiers.jsLoadStarted();
+  </script>
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MG</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <script>
+    document.write('<link href="' + STATIC_URL_PREFIX + 'styles/build.css" media="all" rel="stylesheet">');
+  </script><link href="http://static.parastorage.com/services/media-gallery-ng/0.346.0/assets/media_gallery/styles/build.css" media="all" rel="stylesheet">
+  <!-- endbuild -->
+
+
+  <script src="feather.js"></script>
+  <script src="jquery.min(2).js"></script>
+  <script src="angular.min(2).js"></script>
+  <script src="angular-route.min.js"></script>
+  <script src="angular-sanitize.min(1).js"></script>
+  <script src="angular-cookies.min.js"></script>
+  <link href="fontFace.css" rel="stylesheet" type="text/css">
+
+  <!-- expandFiles:js -->
+
+  <script>
+    document.write('<'+'script src="' + STATIC_URL_PREFIX + 'scripts/build_min.js"></'+'script>');
+  </script><script src="build_min.js"></script>
+
+  <!-- endExpandFiles -->
+
+</head>
+<body id="mediaGalleryApp" class="hidden" wix-autofocus="" wix-click-outside-ng-view="" wix-broadcast-ctrl-a-pressed="" style="zoom: 1;">
+  <div id="tooltip-wrapper" style="position:absolute;"></div>
+  <div id="preview-wrapper"></div>
+
+  <div class="container" ng-view=""></div>
+
+  <script type="text/javascript">
+  document.write('<img src="' + STATIC_URL_PREFIX + 'images/ajax-loader.gif" class="spinner" alt="Spinner">'); // DO WE NEED THIS?
+  </script><img src="ajax-loader.gif" class="spinner" alt="Spinner">
+
+  <script type="text/javascript">
+    if (!NREUMQ.f) {
+      NREUMQ.f=function() {
+        NREUMQ.push(["load",new Date().getTime()]);
+        var e=document.createElement("script");
+        e.type="text/javascript";e.async=true;e.src="https://rpm-images.newrelic.com/42/eum/rum.js";
+        document.body.appendChild(e);
+        if(NREUMQ.a)NREUMQ.a();
+      };
+      NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+    };
+    NREUMQ.push(["nrfj","beacon-2.newrelic.com","27807f3c9c",1910501,"cFhcEERfCF4ER05HA1RSQUtfXgBXGQ==",0,17,new Date().getTime(),"","","","",""])
+  </script>
+  <script>
+    MediaGallery.appLoadNotifiers.domLoadFinished();
+  </script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=1';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script>
+
+
+<script type="text/javascript" async="" src="rum.js"></script></body></html>
